@@ -26,6 +26,7 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -53,6 +54,10 @@ li a:hover {
 
 .social-icon {
     max-width: 30px;
+}
+
+footer nav {
+    margin-top: 20px;
 }
 
 #footer-logo {

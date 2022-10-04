@@ -1,0 +1,112 @@
+{
+    "Products": [
+        {
+            "name": "Frosted Vanilla Cupcake",
+            "price": 16.00,
+            "description": "Lighten up the mood with this vanilla cupcake candle.",
+            "category": "candle",
+            "productid": "product-1",
+            "product-url": "https://www.target.com/p/lidded-milky-glass-jar-frosted-vanilla-cupcake-candle-threshold/-/A-87446406?preselect=83692636#lnk=sametab",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_78b5a109-f20f-4585-af11-51fee6e02383?wid=325&hei=325&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Soft Cashmere and Lavender",
+            "price": 16.00,
+            "description": "Create a calm aura with this scented candle. Soft cashmere and lavender fragrance provides a soothing effect.",
+            "category": "candle",
+            "productid": "product-2",
+            "product-url": "https://www.target.com/p/lidded-milky-glass-jar-soft-cashmere-and-lavender-candle-threshold/-/A-87446410?preselect=79586935#lnk=sametab",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_5132ec87-28e2-4bac-817f-a292f332ce9b?wid=626&hei=626&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Ashwood and Palo Santo",
+            "price": 16.00,
+            "description": "With this pleasant aroma, light this candle to elevate your mood.",
+            "category": "candle",
+            "productid": "product-3",
+            "product-url": "https://www.target.com/p/jar-ashwood-and-palo-santo-candle-threshold/-/A-87446261?preselect=80183731#lnk=sametab",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_a1766c6a-917c-45d6-8426-0d36fc5ceb42?wid=800&hei=800&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Charcoal and Black Teak",
+            "price": 16.00,
+            "description": "Stimulate your senses with charcoal and black teak scents.",
+            "category": "candle",
+            "productid": "product-4",
+            "product-url": "https://www.target.com/p/lidded-milky-glass-jar-charcoal-and-black-teak-candle-threshold/-/A-87446334?preselect=79586929#lnk=sametab",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_47b75941-c525-46d8-82e3-9fd80cc47310?wid=626&hei=626&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Water Mint and Eucalyptus",
+            "price": 16.00,
+            "description": "Create a refreshing and outdoorsy ambiance with this candle. Water mint and eucalyptus scents lighten the mood.",
+            "category": "candle",
+            "productid": "product-5",
+            "product-url": "https://www.target.com/p/lidded-milky-glass-jar-water-mint-and-eucalyptus-candle-threshold/-/A-87446411?preselect=79586913#lnk=sametab",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_29af4953-8492-4cde-8473-d9488d153528?wid=626&hei=626&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Peony and Cherry Blossom",
+            "price": 16.00,
+            "description": "Create a flowery and sweet ambiance with this soothing scent.",
+            "category": "candle",
+            "productid": "product-6",
+            "product-url": "https://www.target.com/p/lidded-milky-glass-jar-peony-and-cherry-blossom-candle-threshold/-/A-87446408?preselect=79586914#lnk=sametab",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_f789c07c-11fe-4300-8b9e-a9afeee0a321?wid=626&hei=626&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Vanilla Bourbon Scented Wax Melts",
+            "price": 10.00,
+            "description": "Create a warm and comforting retreat in your home.",
+            "category": "wax melt",
+            "productid": "product-7",
+            "product-url": "https://www.target.com/p/6ct-vanilla-bourbon-scented-wax-melts-threshold-8482/-/A-79474774",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_765b6442-54f8-4a29-8684-9c1c0634f6d3?wid=626&hei=626&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Cozy Cashmere Scented Wax Melts",
+            "price": 10.00,
+            "description": "Create a warm and comforting retreat in your home.",
+            "category": "wax melt",
+            "productid": "product-8",
+            "product-url": "https://www.target.com/p/6ct-cozy-cashmere-scented-wax-melts-threshold-8482/-/A-79474794",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_e59b5397-95c7-4045-be18-b0029feec8b6?wid=626&hei=626&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Caramel Latte Scented Wax Melts",
+            "price": 10.00,
+            "description": "Create a warm and comforting retreat in your home.",
+            "category": "wax melt",
+            "productid": "product-9",
+            "product-url": "https://www.target.com/p/caramel-latte-wax-melts-threshold-8482/-/A-82095670",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_bc4f6b85-9c89-4ead-8a2c-2a189f06c09f?wid=626&hei=626&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Vanilla Bean and Amber Scented Wax Melts",
+            "price": 10.00,
+            "description": "Create a warm and comforting retreat in your home.",
+            "category": "wax melt",
+            "productid": "product-10",
+            "product-url": "https://www.target.com/p/6ct-vanilla-bean-and-amber-scented-wax-melts-threshold-8482/-/A-79474806",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_57b4ff90-fa03-4c58-b821-4e0e7dbd92d9?wid=626&hei=626&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Glass Warm Cider & Cinnamon Pumpkin Candle",
+            "price": 25.00,
+            "description": "Revitalize yourself after a tiring day with this candle. Warm cider and cinnamon scents help elevate the mood. This glass pumpkin jar with a lid complements a variety of decors.",
+            "category": "seasonal",
+            "productid": "product-11",
+            "product-url": "https://www.target.com/p/glass-warm-cider-cinnamon-pumpkin-candle-brown-threshold/-/A-87517571?preselect=85193884#lnk=sametab",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_d83c4a4f-280d-4c06-8a6e-5c40d6e3733c?wid=626&hei=626&qlt=80&fmt=pjpeg"
+        },
+        {
+            "name": "Glass Vanilla Pumpkin Candle",
+            "price": 25.00,
+            "description": "Create an energizing ambiance for any occasion with this candle, which has a fresh vanilla scent to uplift your mood. This glass pumpkin jar with a lid complements a variety of decors.",
+            "category": "seasonal",
+            "productid": "product-12",
+            "product-url": "https://www.target.com/p/glass-vanilla-pumpkin-candle-white-threshold/-/A-87517546",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_e0b176fa-aa03-4bc5-98f6-786f7d258fee?wid=626&hei=626&qlt=80&fmt=pjpeg"
+        }
+    ]
+}

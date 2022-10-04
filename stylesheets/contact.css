@@ -1,0 +1,129 @@
+/* GENERAL STYLES */
+
+/* colors
+#2C3639 - darker
+#3F4E4F - lighter
+#A27B5C - orangey
+#DCD7C9 - taupe */
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* HEADER & FOOTER */
+
+#logo {
+    max-width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    padding: 20px auto 10px auto;
+    border-top: 3px solid #A27B5C;
+    border-bottom: 3px solid #A27B5C;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li a {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #A27B5C;
+}
+
+li a:hover {
+    color: #3F4E4F;
+}
+
+.social-icon {
+    max-width: 30px;
+}
+
+#footer-logo {
+    display: block;
+    max-width: 15%;
+    margin: 30px auto 20px auto;
+}
+
+#copyright {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* MAIN */
+
+main {
+    background-color: #DCD7C9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1, h2 {
+    display: block;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    background-color: #DCD7C9;
+    color: #3F4E4F;
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-family: "Passions Conflict";
+    font-size: 4em;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 60%;
+    grid-template-rows: repeat(8);
+    justify-content: center;
+}
+
+form label {
+    color: #2C3639;
+    font-family: "Playfair Display", serif;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #A27B5C;
+    border: 2px solid #3F4E4F;
+    border-radius: 5px;
+}
+
+/* MEDIA QUERIES & RESPONSIVENESS */
+
+/* tablet ok */
+
+@media screen and (max-width: 425px) {
+    #logo {
+        max-width: 50%;
+    }
+    #footer-logo {
+        max-width: 50%;
+    }
+    ul {
+        justify-content: space-around;
+    }
+    .social-icon {
+        max-width: 20px;
+    }
+}

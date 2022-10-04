@@ -5,9 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display">
     <title>Contact | Collective Candle Co.</title>
 </head>
 <body>
-    
+<!--  HEADER  -->
+    <header>
+        <img src="images/logo/logo-stacked.png" alt="Collective Candle Co." id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">OUR PRODUCTS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li id="social-container"><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo" class="social-icon"></a>
+                    <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo"class="social-icon"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo"class="social-icon"></a>
+                    </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- BODY -->
+    <main>
+        <section class="headings">
+            <h1>Questions, Comments or Concerns?</h1>
+            <h2>Reach out to us using the form below!</h2>
+        </section>
+
+        <form action="">
+
+            <label for="fname">First Name</label>
+                <input type="text" id="lname" name="lname" required placeholder="Jane">
+            <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required placeholder="Doe">
+            <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="123-456-7890">
+            <label for="email">Email Address</label>
+                <input type="email"id="email" name="email" required placeholder="janedoe@website.com">
+            <label for="order">Order Number</label>
+                <input type="text" id="order" name="order" placeholder="12-34567890">
+            <label for="reason">How Can We Help You?</label>
+                <select name="reason" id="reason">
+                    <option value="Issue with my order">Issue with my online order</option>
+                    <option value="Product-related question">Product-related question</option>
+                    <option value="Shipping-related question">Shipping-related question</option>
+                    <option value="Other">Other</option>
+                </select>
+            <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Tell us why you're reaching out."></textarea>
+            <button>Submit</button>
+        </form>
+    </main>
+
+<!-- FOOTER -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">OUR PRODUCTS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li id="social-container"><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo" class="social-icon"></a>
+                    <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo" class="social-icon"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo" class="social-icon"></a>
+                    </li>
+            </ul>
+        </nav>
+        <img src="images/logo/logo-playfair-display.png" alt="Collective Candle Co." id="footer-logo">
+        <span id="copyright">&copy; 2022 All Rights Reserved</span>
+    </footer>
+
+
 </body>
 </html>

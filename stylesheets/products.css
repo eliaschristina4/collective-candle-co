@@ -1,0 +1,121 @@
+/* GENERAL STYLES */
+
+/* colors
+#2C3639 - darker
+#3F4E4F - lighter
+#A27B5C - orangey
+#DCD7C9 - taupe */
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* HEADER & FOOTER */
+
+#logo {
+    max-width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    padding: 20px auto 10px auto;
+    border-top: 3px solid #A27B5C;
+    border-bottom: 3px solid #A27B5C;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li a {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #A27B5C;
+}
+
+li a:hover {
+    color: #3F4E4F;
+}
+
+.social-icon {
+    max-width: 30px;
+}
+
+#footer-logo {
+    display: block;
+    max-width: 15%;
+    margin: 30px auto 20px auto;
+}
+
+#copyright {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* MAIN */
+
+main {
+    background-color: #DCD7C9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    display: block;
+    margin: 0 auto 50px auto;
+    font-family: "Passions Conflict";
+    font-size: 4em;
+    text-align: center;
+    color: #3F4E4F;
+}
+
+.product {
+    border: 3px solid #A27B5C;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.name {
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #3F4E4F;
+}
+
+.price {
+    color: #2C3639;
+}
+
+
+
+/* MEDIA QUERIES & RESPONSIVENESS */
+
+@media screen and (max-width: 425px) {
+    #logo {
+        max-width: 50%;
+    }
+    #footer-logo {
+        max-width: 50%;
+    }
+    ul {
+        justify-content: space-around;
+    }
+    .social-icon {
+        max-width: 20px;
+    }
+}

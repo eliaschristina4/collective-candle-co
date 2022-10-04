@@ -5,9 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display">
     <title>Our Products | Collective Candle Co.</title>
 </head>
 <body>
-    
+
+<!--  HEADER  -->
+    <header>
+        <img src="images/logo/logo-stacked.png" alt="Collective Candle Co." id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">OUR PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li id="social-container"><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo" class="social-icon"></a>
+                    <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo"class="social-icon"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo"class="social-icon"></a>
+                    </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- BODY -->    
+
+    <main>
+        <h1>Shop Our Products</h1>
+        <section class="products-container">
+            <!-- <img src="" alt="candle" class="product" id="product-1"> -->
+        </section>
+    </main>
+
+<!-- FOOTER -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">OUR PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li id="social-container"><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo" class="social-icon"></a>
+                    <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo" class="social-icon"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo" class="social-icon"></a>
+                    </li>
+            </ul>
+        </nav>
+        <img src="images/logo/logo-playfair-display.png" alt="Collective Candle Co." id="footer-logo">
+        <span id="copyright">&copy; 2022 All Rights Reserved</span>
+    </footer>
+
+<!--JS & JSON-->
+    <script>
+
+        fetch("products.json")
+            .then((response) => response.json())
+            .then((data) => {
+                // console.log(data);
+                // document.querySelector('#product-1').src = data.Products[0].image; // WORKSSSS!!!!  Would have to do each individually for product name, description price AND img. the loop below in J's example would circumvent that. a loop for each basically
+
+                let inventory = "";
+                data.Products.forEach(Product => {
+                    inventory += ` <img src="${Product.image}" alt="candle" class="product" id="${Product.productid}">`; 
+                    inventory += ` <p class="name">${Product.name}</p>`;
+                    inventory += ` <p class="price">$${Product.price}</p>`;
+                    inventory += ` <p class="description">${Product.description}</p>`;
+                })
+                console.log(inventory);
+                document.querySelector('section').innerHTML = inventory;
+            })
+            .catch((err) => console.log(err));
+        
+
+
+
+
+    // JUSTIN TUTORIAL FOR GUIDANCE
+
+    // fetch('employee-data.json')
+    // .then(response => response.json())
+    // .then(json => {
+       
+    //     // console.log(json.Employees[0].jobTitle);
+    //     // let list = json.Employees[0].jobTitle
+    //     // document.querySelector('ol').innerHTML = list;
+
+    //     let list = "";
+    //     json.Employees.forEach(Employee => {
+    //         console.log(`beginning of loop ${list}`);
+    //         list += `<li class="hello">${Employee.userId}</li>`
+    //         console.log(`end of loop ${list}`);
+    //     });
+
+    //     document.querySelector('.purple').innerHTML = json.Employees[0].jobTitle;
+        
+    //     document.querySelector('ol').innerHTML = list;
+    //     // document.querySelector('.hello').style.backgroundColor = "green";
+
+    // })
+
+    </script>
 </body>
 </html>

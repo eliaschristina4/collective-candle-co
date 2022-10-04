@@ -5,9 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display">
     <title>Home | Collective Candle Co.</title>
 </head>
 <body>
-    
+
+<!-- HEADER -->
+    <header>
+        <img src="images/logo/logo-stacked.png" alt="Collective Candle Co." id="logo">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="products.html">OUR PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li id="social-container"><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo" class="social-icon"></a>
+                    <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo"class="social-icon"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo"class="social-icon"></a>
+                    </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- BODY/MAIN -->
+
+<main>
+
+    <!-- main body header and introduction -->
+        <section>
+            <h1>Welcome to Collective Candle Co.</h1>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nesciunt debitis, ad ab sint eius natus ratione eligendi! Aspernatur delectus officiis iusto non quaerat accusamus et atque consequatur consectetur dolores.</h2>
+        </section>
+
+    <!-- slideshow and aside div container -->
+    <div id="about">
+
+        <!-- about section -->
+        <aside>
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sequi quasi reiciendis asperiores, error, aliquam ab consequatur vero quae vitae eaque. Nulla harum, fuga iure nostrum aut eos. Reprehenderit, expedita!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, perferendis. Cumque, quia placeat tenetur quo enim vero impedit quaerat saepe repellendus eos, asperiores accusamus reiciendis eaque animi dicta porro consectetur!
+            </p>
+        </aside>
+
+        <img src="images/closeup-candles.jpg" alt="close-up of candles on table">
+
+    </div>
+</main>
+
+    <!-- links to product page and contact page -->
+    <h4>New! Shop our limited-edition fall candles now</h4>
+    <section class="seasonal">
+        <div id="vanilla">
+                <a href="products.html"><img src="images/glass-candle-vanilla.jpeg" alt="Glass Vanilla Pumpkin Candle"></a>
+                <p>Glass Vanilla Pumpkin Candle | $25</p>
+        </div>
+        <div id="cider">
+                <a href="products.html"><img src="images/glass-candle-cider-cinnamon.jpeg" alt="Glass Warm Cider & Cinnamon Pumpkin Candle"></a>
+                <p>Glass Cider & Cinnamon Pumpkin Candle | $25</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="last">
+        <!-- slideshow/carousel -->
+        <div class="carousel-container">
+            <!--Previous and Next buttons-->
+            <div class="navigation">
+                <div class="prev nav-btn">&#8592;</div>
+                <div class="next nav-btn">&#8594;</div>
+            </div>
+            <!--Images-->
+            <div class="carousel">
+                <div class="item main">
+                    <img src="images/waxmelt-vanillabourbon.jpeg" alt="">
+                    </div>
+                <div class="item">
+                    <img src="images/waxmelt-cashmere.jpeg" alt="">
+                    </div>
+                <div class="item">
+                    <img src="images/waxmelt-vanillabean.jpeg" alt="">
+                    </div> 
+                <div class="item">
+                    <img src="images/waxmelt-caramellatte.jpeg" alt="">
+                    </div> 
+            </div>
+        </div>
+        <aside>
+            <h5>Fan Favorite: Check out our easy-to-use wax melts</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dignissimos illum obcaecati aut. Iure laudantium recusandae perspiciatis laborum voluptate, aperiam, necessitatibus vel corrupti a cumque quaerat aut nobis aspernatur eligendi.</p>
+            <button>Shop Now</button>
+        </aside>
+    </section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">OUR PRODUCTS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li id="social-container"><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo" class="social-icon"></a>
+                <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo" class="social-icon"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo" class="social-icon"></a>
+                </li>
+        </ul>
+    </nav>
+    <img src="images/logo/logo-playfair-display.png" alt="Collective Candle Co." id="footer-logo">
+    <span id="copyright">&copy; 2022 All Rights Reserved</span>
+</footer>
+
+<!-- JS -->
+    <script>
+
+    // SLIDESHOW AND BUTTONS
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const images = document.querySelector('.carousel').children;
+        const totalImages = images.length;
+        let index = 0;
+
+        prev.addEventListener('click', () => {
+        nextImage('next');
+        })
+
+        next.addEventListener('click', () => {
+        nextImage('prev');
+        })
+
+        function nextImage(direction) {
+        if(direction == 'next') {
+            index++;
+            if(index == totalImages) {
+            index = 0;
+            }
+        } else {
+            if(index == 0) {
+            index = totalImages - 1;
+            } else {
+            index--;
+            }
+        }
+
+        for(let i = 0; i < images.length; i++) {
+            images[i].classList.remove('main');
+        }
+        images[index].classList.add('main');
+        }
+
+    // PRODUCTS SECTION - SEASONAL CANDLES from JSON
+
+    // fetch("products.json")
+    //         .then((response) => response.json())
+    //         .then((data) => {
+                // console.log(data);
+                // document.querySelector('#product-1').src = data.Products[0].image; // WORKSSSS!!!!  Would have to do each individually for product name, description price AND img. the loop below in J's example would circumvent that. a loop for each basically
+
+            //     let inventory = "";
+            //     data.Products.forEach(Product => {
+            //         inventory += ` <img src="${Product.image}" alt="candle" class="product" id="${Product.productid}">`; 
+            //         inventory += ` <p class="name">${Product.name}</p>`;
+            //         inventory += ` <p class="price">$${Product.price}</p>`;
+            //         inventory += ` <p class="description">${Product.description}</p>`;
+            //     })
+            //     console.log(inventory);
+            //     document.querySelector('section').innerHTML = inventory;
+            
+            // if (Products)
+            
+
+
+            // })
+            // .catch((err) => console.log(err));
+
+    </script>
 </body>
 </html>

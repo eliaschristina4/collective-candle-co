@@ -189,6 +189,11 @@ button {
     margin: 40px auto 0 auto;
 }
 
+button:hover {
+    color: #A27B5C;
+    background-color: #DCD7C9;
+}
+
 /* SLIDESHOW */
 
 .carousel-container {

@@ -78,17 +78,14 @@ main {
  display: flex;
  flex-wrap: wrap;
  flex-direction: row;
- justify-content: space-around;
+ justify-content: center;
 
- /* padding-left: 100px; */
- padding-top: 50px;
- padding-bottom: 50px;
- padding-right: 200px;
+ padding: 20px 0
 }
 
 main img {
     max-width: 30%;
-    margin-left: 200px;
+    margin-right: 20px;
     box-shadow: 10px 10px 5px #DCD7C9;
 }
 
@@ -97,7 +94,7 @@ main .info {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    margin-right: 200px;
+    margin-left: 20px;
 }
 
 main p {
@@ -107,7 +104,7 @@ main p {
 
 .container {
     /* background-color: #DCD7C9; */
-    background-color: rgba(162,123, 92, 0.4) ;
+    background-color: rgba(63, 78, 79, 0.5);
     padding-top: 25px;
     padding-bottom: 50px;
 }
@@ -130,7 +127,7 @@ h3 {
 
 form {
     display: grid;
-    grid-template-columns: 60%;
+    grid-template-columns: 40%;
     grid-template-rows: repeat(8);
     justify-content: center;
 }
@@ -152,21 +149,97 @@ button {
     margin: 40px auto 0 auto;
 }
 
+/* button:hover {
+    color: #A27B5C;
+    background-color: #DCD7C9;
+} */
+
 /* MEDIA QUERIES & RESPONSIVENESS */
 
-/* tablet ok */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    main img {
+        /* height: 300px; */
+        max-width: 50%;
+        object-fit:cover;
+        margin-left: 0;
+        margin-top: 20px;
+        box-shadow: none;
+    }
+    div.info {
+        margin: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 50%;
+    }
+    form {
+        grid-template-columns: 60%;
+    }
+}
+
+
+/* ******************************** */
 
 @media screen and (max-width: 425px) {
+    /* header and footer */
     #logo {
         max-width: 50%;
     }
     #footer-logo {
-        max-width: 50%;
+        max-width: 70%;
     }
     ul {
         justify-content: space-around;
     }
     .social-icon {
         max-width: 20px;
+    }
+    header .social-icon {
+        display: none;
+    }
+    footer ul  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* main */
+
+    main {
+        padding: 0;
+        margin: 0;
+    }
+    main img {
+        height: 300px;
+        width: 100%;
+        object-fit:cover;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .info {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    /* form */
+    form {
+        grid-template-columns: 80%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header ul {
+        flex-direction: column;
+        text-align: center;    
+    }
+    form {
+        grid-template-columns: 90%;
     }
 }

@@ -19,9 +19,9 @@
                 <li><a href="#">HOME</a></li>
                 <li><a href="products.html">OUR PRODUCTS</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
-                <li id="social-container"><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo" class="social-icon"></a>
-                    <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo"class="social-icon"></a>
-                    <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo"class="social-icon"></a>
+                <li class="social-container"><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo" class="social-icon"></a>
+                    <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo" class="social-icon"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo" class="social-icon"></a>
                     </li>
             </ul>
         </nav>
@@ -64,7 +64,6 @@
                 <a href="products.html"><img src="images/glass-candle-cider-cinnamon.jpeg" alt="Glass Warm Cider & Cinnamon Pumpkin Candle"></a>
                 <p>Glass Cider & Cinnamon Pumpkin Candle | $25</p>
             </div>
-        </div>
     </section>
 
     <section id="last">
@@ -92,7 +91,7 @@
             </div>
         </div>
         <aside>
-            <h5>Fan Favorite: Check out our easy-to-use wax melts</h5>
+            <h5>Fan Favorites: Check out our easy-to-use wax melts</h5>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dignissimos illum obcaecati aut. Iure laudantium recusandae perspiciatis laborum voluptate, aperiam, necessitatibus vel corrupti a cumque quaerat aut nobis aspernatur eligendi.</p>
             <a href="products.html"><button type="button">Shop Now</button></a>
         </aside>
@@ -108,7 +107,7 @@
             <li><a href="#">HOME</a></li>
             <li><a href="products.html">OUR PRODUCTS</a></li>
             <li><a href="contact.html">CONTACT US</a></li>
-            <li id="social-container"><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo" class="social-icon"></a>
+            <li class="social-container"><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo" class="social-icon"></a>
                 <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo" class="social-icon"></a>
                 <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo" class="social-icon"></a>
                 </li>
@@ -155,31 +154,7 @@
         }
         images[index].classList.add('main');
         }
-
-    // PRODUCTS SECTION - SEASONAL CANDLES from JSON
-
-    // fetch("products.json")
-    //         .then((response) => response.json())
-    //         .then((data) => {
-                // console.log(data);
-                // document.querySelector('#product-1').src = data.Products[0].image; // WORKSSSS!!!!  Would have to do each individually for product name, description price AND img. the loop below in J's example would circumvent that. a loop for each basically
-
-            //     let inventory = "";
-            //     data.Products.forEach(Product => {
-            //         inventory += ` <img src="${Product.image}" alt="candle" class="product" id="${Product.productid}">`; 
-            //         inventory += ` <p class="name">${Product.name}</p>`;
-            //         inventory += ` <p class="price">$${Product.price}</p>`;
-            //         inventory += ` <p class="description">${Product.description}</p>`;
-            //     })
-            //     console.log(inventory);
-            //     document.querySelector('section').innerHTML = inventory;
-            
-            // if (Products)
-            
-
-
-            // })
-            // .catch((err) => console.log(err));
+  
 
     </script>
 </body>

@@ -135,6 +135,7 @@ form {
 form label {
     color: #2C3639;
     font-family: "Playfair Display", serif;
+    margin-top: 15px;
 }
 
 button {

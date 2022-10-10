@@ -42,6 +42,7 @@ ul {
     justify-content: space-between;
 }
 
+
 li a {
     font-family: "Playfair Display", serif;
     font-weight: bold;
@@ -248,7 +249,7 @@ button:hover {
     height: 100%;
     width: 100%;
     transition: all 0.3s ease;
-    border:8px solid white;
+    border: 8px solid white;
     object-fit: fill;
 }
   
@@ -267,21 +268,108 @@ button:hover {
 
 /* MEDIA QUERIES & RESPONSIVENESS */
 
-@media screen and (min-width: 425px) {
+@media screen and (max-width: 768px){
+    h2 {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #about aside {
+        max-width: 50%;
+        padding: 5%;
+    }
+
+    #about img {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .seasonal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seasonal div {
+        margin-left: auto;
+        margin-right: auto;
+    }
     
+    .seasonal div img {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-container {
+        width: 250px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #last aside {
+        max-width: 100%;
+        padding: 5% 10% 0 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #footer-logo {
+        max-width: 200px;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
+    /* HEADER AND FOOTER */
     #logo {
         max-width: 50%;
     }
-    #footer-logo {
-        max-width: 50%;
+
+    header .social-container {
+        display: none;
     }
+
     ul {
         justify-content: space-around;
     }
+
     .social-icon {
         max-width: 20px;
     }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-logo {
+        max-width: 50%;
+    }
+
+    /* BODY */
+
+    #about {
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #about aside {
+        max-width: 100%;
+    }
+
+    h3 {
+        margin: 20px auto;
+    }
+
+    #about img {
+        /* display: block; */
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
 }

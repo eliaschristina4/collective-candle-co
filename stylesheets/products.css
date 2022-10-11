@@ -1,11 +1,5 @@
 /* GENERAL STYLES */
 
-/* colors
-#2C3639 - darker
-#3F4E4F - lighter
-#A27B5C - orangey
-#DCD7C9 - taupe */
-
 body {
     font-family: sans-serif;
 }
@@ -68,11 +62,10 @@ li a:hover {
     text-align: center;
 }
 
+
 /* MAIN */
 
 main {
-    /* background-color: #DCD7C9; */
-    /* background-color: rgba(44,54,57, 0.5) ; */
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -87,9 +80,7 @@ h1 {
 }
 
 .product {
-    /* border: 5px solid #A27B5C; */
     border: 5px solid #3F4E4F;
-    /* box-shadow: 10px 10px 5px #DCD7C9; */
     max-height: 100%;
     max-width: 300px;
 
@@ -112,7 +103,6 @@ h1 {
 
 button {
     font-family: "Playfair Display", serif;
-    /* font-size: 1.25em; */
     font-weight: bold;
     color: #2C3639;
     background-color: #A27B5C;
@@ -127,6 +117,7 @@ button:hover {
     color: #A27B5C;
     background-color: #DCD7C9;
 }
+
 
 /* GRID */
 /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
@@ -151,6 +142,7 @@ button:hover {
 #container-product-3 {
     grid-area: 1 / 3 / 2 / 4;
 }
+
 
 /* MEDIA QUERIES & RESPONSIVENESS */
 
@@ -178,15 +170,13 @@ button:hover {
     }  
 }
 
+
 @media screen and (max-width: 768px){
     #footer-logo {
         max-width: 25%;
     } 
-    /* maybe change this? review/test it */
 }
 
-
-/* ********************************* */
 
 @media screen and (max-width: 670px) {
     #logo {
@@ -228,8 +218,6 @@ button:hover {
 }
 
 
-/* ********************************* */
-
 @media screen and (max-width: 425px) {
     header .social-icon {
         display: none;
@@ -237,16 +225,6 @@ button:hover {
 
     footer ul  {
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
     }
-
-    /* footer .social-container {
-        width: 100%;
-        display: flex;
-    }
-
-    footer .social-icon {
-        text-align: center;
-    } */
 }

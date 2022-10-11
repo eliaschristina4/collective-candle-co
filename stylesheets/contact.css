@@ -1,11 +1,5 @@
 /* GENERAL STYLES */
 
-/* colors
-#2C3639 - darker
-#3F4E4F - lighter
-#A27B5C - orangey
-#DCD7C9 - taupe */
-
 body {
     font-family: sans-serif;
 }
@@ -72,6 +66,7 @@ footer nav {
     text-align: center;
 }
 
+
 /* MAIN */
 
 main {
@@ -103,7 +98,6 @@ main p {
 }
 
 .container {
-    /* background-color: #DCD7C9; */
     background-color: rgba(63, 78, 79, 0.5);
     padding-top: 25px;
     padding-bottom: 50px;
@@ -111,7 +105,6 @@ main p {
 
 h1, h2, h3 {
     display: block;
-    /* margin: 0 auto 50px auto; */
     text-align: center;
     color: #2C3639;
 }
@@ -150,10 +143,6 @@ button {
     margin: 40px auto 0 auto;
 }
 
-/* button:hover {
-    color: #A27B5C;
-    background-color: #DCD7C9;
-} */
 
 /* MEDIA QUERIES & RESPONSIVENESS */
 
@@ -164,7 +153,6 @@ button {
         padding-bottom: 20px;
     }
     main img {
-        /* height: 300px; */
         max-width: 50%;
         object-fit:cover;
         margin-left: 0;
@@ -182,8 +170,6 @@ button {
     }
 }
 
-
-/* ******************************** */
 
 @media screen and (max-width: 425px) {
     /* header and footer */
@@ -208,7 +194,6 @@ button {
     }
 
     /* main */
-
     main {
         padding: 0;
         margin: 0;

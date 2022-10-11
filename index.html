@@ -117,16 +117,22 @@
     <span id="copyright">&copy; 2022 All Rights Reserved</span>
 </footer>
 
-<!-- JS -->
+<!---------------------------------------------------------------->
+<!--                  JAVASCRIPT & JSON FETCH                   -->
+<!---------------------------------------------------------------->
+
     <script>
 
     // SLIDESHOW AND BUTTONS
+
+        // setting html elements to js variables to use later
         const prev = document.querySelector('.prev');
         const next = document.querySelector('.next');
         const images = document.querySelector('.carousel').children;
         const totalImages = images.length;
-        let index = 0;
+        let index = 0; // setting index to 0 for if/else statement later on
 
+        // event listeners for buttons
         prev.addEventListener('click', () => {
         nextImage('next');
         })
@@ -135,27 +141,29 @@
         nextImage('prev');
         })
 
+        // function called by event listeners on buttons
         function nextImage(direction) {
-        if(direction == 'next') {
-            index++;
-            if(index == totalImages) {
-            index = 0;
+            if(direction == 'next') {
+                index++; // go onto next image
+                if(index == totalImages) {
+                index = 0; // resets carousel
+                } 
+            } else { 
+                if(index == 0) {
+                index = totalImages - 1; // if at 0 index, go back one image
+                } else {
+                index--; // go back another image
+                }
             }
-        } else {
-            if(index == 0) {
-            index = totalImages - 1;
-            } else {
-            index--;
-            }
-        }
 
-        for(let i = 0; i < images.length; i++) {
-            images[i].classList.remove('main');
-        }
-        images[index].classList.add('main');
+            // for loop that goes through which image is set as the "main," or the one we see displayed
+            // adds and removes main class to show picture based on where it is in the loop
+            for(let i = 0; i < images.length; i++) {
+                images[i].classList.remove('main'); 
+            }
+            images[index].classList.add('main');
         }
   
-
     </script>
 </body>
 </html>

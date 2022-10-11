@@ -28,30 +28,26 @@
     </header>
 
 <!-- BODY/MAIN -->
-
-<main>
-
-    <!-- main body header and introduction -->
+    <main>
+        <!-- main body header and introduction -->
         <section>
             <h1>Welcome to Collective Candle Co.</h1>
             <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nesciunt debitis, ad ab sint eius natus ratione eligendi! Aspernatur delectus officiis iusto non quaerat accusamus et atque consequatur consectetur dolores.</h2>
         </section>
 
-    <!-- slideshow and aside div container -->
-    <div id="about">
 
-        <!-- about section -->
-        <aside>
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sequi quasi reiciendis asperiores, error, aliquam ab consequatur vero quae vitae eaque. Nulla harum, fuga iure nostrum aut eos. Reprehenderit, expedita!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, perferendis. Cumque, quia placeat tenetur quo enim vero impedit quaerat saepe repellendus eos, asperiores accusamus reiciendis eaque animi dicta porro consectetur!
-            </p>
-        </aside>
-
-        <img src="images/closeup-candles.jpg" alt="close-up of candles on table">
-
-    </div>
-</main>
+        <!-- slideshow and aside div container -->
+        <div id="about">
+            <!-- about section -->
+            <aside>
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sequi quasi reiciendis asperiores, error, aliquam ab consequatur vero quae vitae eaque. Nulla harum, fuga iure nostrum aut eos. Reprehenderit, expedita!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, perferendis. Cumque, quia placeat tenetur quo enim vero impedit quaerat saepe repellendus eos, asperiores accusamus reiciendis eaque animi dicta porro consectetur!
+                </p>
+            </aside>
+            <img src="images/closeup-candles.jpg" alt="close-up of candles on table">
+        </div>
+    </main>
 
     <!-- links to product page and contact page -->
     <h4>New! Shop our limited-edition fall candles now</h4>
@@ -66,15 +62,16 @@
             </div>
     </section>
 
+    <!-- bottom section -->
     <section id="last">
         <!-- slideshow/carousel -->
         <div class="carousel-container">
-            <!--Previous and Next buttons-->
+            <!-- previous and next buttons-->
             <div class="navigation">
                 <div class="prev nav-btn">&#8592;</div>
                 <div class="next nav-btn">&#8594;</div>
             </div>
-            <!--Images-->
+            <!-- images -->
             <div class="carousel">
                 <div class="item main">
                     <img src="images/waxmelt-vanillabourbon.jpeg" alt="">
@@ -97,10 +94,7 @@
         </aside>
     </section>
 
-
-
 <!-- FOOTER -->
-
 <footer>
     <nav>
         <ul>
@@ -117,13 +111,11 @@
     <span id="copyright">&copy; 2022 All Rights Reserved</span>
 </footer>
 
-<!---------------------------------------------------------------->
-<!--                  JAVASCRIPT & JSON FETCH                   -->
-<!---------------------------------------------------------------->
+<!-------------------------------------------------------->
+<!--               JAVASCRIPT - SLIDESHOW               -->
+<!-------------------------------------------------------->
 
-    <script>
-
-    // SLIDESHOW AND BUTTONS
+    <script> 
 
         // setting html elements to js variables to use later
         const prev = document.querySelector('.prev');
